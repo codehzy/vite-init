@@ -429,6 +429,11 @@
     ts-node "^9"
     tslib "^2"
 
+"@popperjs/core@^2.9.2":
+  version "2.11.0"
+  resolved "https://registry.npmmirror.com/@popperjs/core/download/@popperjs/core-2.11.0.tgz#6734f8ebc106a0860dff7f92bf90df193f0935d7"
+  integrity sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ==
+
 "@postcss-plugins/console@^0.2.5":
   version "0.2.5"
   resolved "https://registry.npmmirror.com/@postcss-plugins/console/download/@postcss-plugins/console-0.2.5.tgz#5af493a5682a42b7ebd3c7c51d53a72eca8062fa"
@@ -475,6 +480,23 @@
   version "4.0.0"
   resolved "https://registry.npmmirror.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz?cache=0&sync_timestamp=1637269948744&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fparse-json%2Fdownload%2F%40types%2Fparse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
+
+"@vant/icons@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.nlark.com/@vant/icons/download/@vant/icons-1.7.1.tgz#49ae420302b5581e54e6894891e5a05bc76e9f87"
+  integrity sha1-Sa5CAwK1WB5U5olIkeWgW8dun4c=
+
+"@vant/popperjs@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.nlark.com/@vant/popperjs/download/@vant/popperjs-1.1.0.tgz#b4edee5bbfa6fb18705986e313d4fd5f17942a0f"
+  integrity sha1-tO3uW7+m+xhwWYbjE9T9XxeUKg8=
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+
+"@vant/use@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.npmmirror.com/@vant/use/download/@vant/use-1.3.4.tgz?cache=0&sync_timestamp=1637544008080&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vant%2Fuse%2Fdownload%2F%40vant%2Fuse-1.3.4.tgz#f99482d63682973a2775aa5c1a9cf906862a4f71"
+  integrity sha512-XvZkPCjcmEBhD+T3vB68thOG6P9jazld6aBTMenhbAQd4FT/x9AiKIWPJx4MvhYoSIWt7fju6K01XTJldWs1hw==
 
 "@vitejs/plugin-legacy@^1.6.3":
   version "1.6.3"
@@ -3286,6 +3308,15 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vant@3:
+  version "3.3.6"
+  resolved "https://registry.npmmirror.com/vant/download/vant-3.3.6.tgz#02b6ef4b1dd7a04260ccee2f7764b172efff5c79"
+  integrity sha512-z8Sts1ZDepI42Z4rKmklwazaT65FPJBJ7dnNrAB6VGPBrN5yOabSffvt3XnhTFCPK+Xa7NagjN1LdRR7n0udAg==
+  dependencies:
+    "@vant/icons" "^1.7.1"
+    "@vant/popperjs" "^1.1.0"
+    "@vant/use" "^1.3.4"
 
 vite-plugin-style-import@^1.4.0:
   version "1.4.0"
