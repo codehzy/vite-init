@@ -1,11 +1,18 @@
 import { Head, Title } from './components'
 import { defineComponent, ref } from 'vue'
 import logo from './assets/logo.png'
+import { HeadType } from '@/types/HeaderType'
 
 export const AppHeader = defineComponent({
   name: 'AppHeader',
   setup() {
     const Header = ref('汇总Header')
+
+    const head = ref<HeadType>({
+      title: 'test',
+      name: 'hzy',
+      age: 123,
+    })
 
     // 渲染Header
     const renderHeader = () => {

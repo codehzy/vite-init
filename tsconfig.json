@@ -13,7 +13,10 @@
     "types": ["vite/client"],
     // ts环境不支持模块关联的类型校验
     "isolatedModules": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/worker.js"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "public", "tests"]
 }
