@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import App from './App'
-import Vant, { Popup } from 'vant'
+import { Popup } from 'vant'
 import 'vant/lib/index.css'
+import router from './router/index'
 
 const app = createApp(App)
 
-app.use(Vant).use(Popup).mount('#app')
+app.use(Popup).use(router).mount('#app')

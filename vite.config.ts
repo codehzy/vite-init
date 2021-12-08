@@ -4,6 +4,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import { Plugin } from 'vite'
 import styleImport from 'vite-plugin-style-import'
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,7 +30,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': '/src/',
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   optimizeDeps: {},
