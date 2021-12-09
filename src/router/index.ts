@@ -17,6 +17,11 @@ const routes: RouteRecordRaw[] = [
     name: 'piniaTest',
     component: () => import('@/view/piniaTest'),
   },
+  {
+    path: '/native-ui',
+    name: 'NativeUi',
+    component: () => import('@/view/NativeUi'),
+  },
 ]
 
 const router = createRouter({
