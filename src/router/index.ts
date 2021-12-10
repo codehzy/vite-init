@@ -22,6 +22,11 @@ const routes: RouteRecordRaw[] = [
     name: 'NativeUi',
     component: () => import('@/view/NativeUi'),
   },
+  {
+    path: '/lodash',
+    name: 'Lodash',
+    component: () => import('@/view/lodash'),
+  },
 ]
 
 const router = createRouter({
