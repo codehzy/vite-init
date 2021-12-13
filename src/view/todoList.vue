@@ -43,6 +43,7 @@
         <h3 v-if="showTitle">你好 Vue3</h3>
       </transition>
     </div>
+    <vueFamilary />
   </div>
 </template>
 
@@ -51,6 +52,7 @@ import { useTodos } from './hooks/useTodoList'
 import { useFullscreen } from '@vueuse/core'
 import { ref } from 'vue'
 import Rate from './component/rate.vue'
+import vueFamilary from './component/vueFamilary.vue'
 
 const { title, todos, addTodo, clear, active, all, allDone, showModal } =
   useTodos()
