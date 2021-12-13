@@ -27,6 +27,11 @@ const routes: RouteRecordRaw[] = [
     name: 'Lodash',
     component: () => import('@/view/lodash'),
   },
+  {
+    path: '/todo-list',
+    name: 'todoList',
+    component: () => import('@/view/todoList.vue'),
+  },
 ]
 
 const router = createRouter({
