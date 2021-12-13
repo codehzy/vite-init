@@ -1,13 +1,8 @@
-import { ref, computed } from 'vue'
-
-interface todoType {
-  title: string
-  done: boolean
-}
+import { computed } from 'vue'
+import { useStorage } from './useStorage'
 
 export const useTodos = () => {
-  let title = ref('')
-  let todos = ref<Array<todoType>>([{ title: '学习Vue', done: false }])
+  const { title, todos } = useStorage()
 
   function addTodo() {
     todos.value.push({
