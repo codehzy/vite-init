@@ -1,10 +1,19 @@
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useStorage } from './useStorage'
 
 export const useTodos = () => {
   const { title, todos } = useStorage()
 
+  let showModal = ref(false)
+
   function addTodo() {
+    if (!title.value) {
+      showModal.value = true
+      setTimeout(() => {
+        showModal.value = false
+      }, 1500)
+      return
+    }
     todos.value.push({
       title: title.value,
       done: false,
@@ -35,5 +44,5 @@ export const useTodos = () => {
     },
   })
 
-  return { title, todos, addTodo, clear, active, all, allDone }
+  return { title, todos, addTodo, clear, active, all, allDone, showModal }
 }

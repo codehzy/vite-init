@@ -1,11 +1,19 @@
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, Suspense } from 'vue'
 import '@/styles/admin.scss'
 import { darkTheme, NConfigProvider, NButton, NCard } from 'naive-ui'
-
 export default defineComponent({
   components: {},
   setup() {
     const theme = ref()
+
+    const slots = {
+      default: () => (
+        <div>
+          <router-view></router-view>
+        </div>
+      ),
+      fallback: () => [<div>加载中...</div>],
+    }
 
     return () => {
       return (
@@ -26,7 +34,7 @@ export default defineComponent({
               >
                 浅色
               </NButton>
-              <router-view></router-view>
+              <Suspense>{slots}</Suspense>
             </NCard>
           </NConfigProvider>
         </>
