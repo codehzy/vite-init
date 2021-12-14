@@ -10,13 +10,32 @@
   height: 100%;
 }
 
+.n-layout-scroll-container {
+  height: 100%;
+}
+
 
 .admin-header-title {
   color: blue
 }
 
-.img {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+// .img {
+//   display: inline-block;
+//   width: 100px;
+//   height: 100px;
+// }
+
+.n-layout-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left-title {
+  line-height: 34px;
+  font-size: 34px;
+}
+
+.header-left-img {
+  width: 10px;
+  height: 10px;
 }
