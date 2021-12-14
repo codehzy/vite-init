@@ -7,9 +7,7 @@ interface todoType {
 
 export const useStorage = () => {
   let title = ref('')
-  let todos = ref<Array<todoType>>(
-    JSON.parse(localStorage.getItem('todos') || '[]')
-  )
+  let todos = ref<todoType[]>(JSON.parse(localStorage.getItem('todos') || '[]'))
 
   watchEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos.value))

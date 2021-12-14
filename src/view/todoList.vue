@@ -44,6 +44,7 @@
       </transition>
     </div>
     <vueFamilary />
+    <Heading :level="3">hello h函数</Heading>
   </div>
 </template>
 
@@ -53,6 +54,7 @@ import { useFullscreen } from '@vueuse/core'
 import { ref } from 'vue'
 import Rate from './component/rate.vue'
 import vueFamilary from './component/vueFamilary.vue'
+import Heading from './component/Heading.tsx'
 
 const { title, todos, addTodo, clear, active, all, allDone, showModal } =
   useTodos()
