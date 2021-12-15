@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Index from '@/view/Index'
+import { getToken } from '../api/auth'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -37,6 +38,16 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.beforeEach(async (to, from, next) => {
+  let token = getToken()
+  console.log(token)
+
+  if (!token) {
+    next('/login')
+  }
+  next()
 })
 
 export default router
